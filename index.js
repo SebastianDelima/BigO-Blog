@@ -1,15 +1,19 @@
 
 let family = ["David", "Carla", "Sebastian"]
 
-function sayHi(family){
+function greetMembers(family){
     
-    let date = new Date().toUTCString()
-       family.array.forEach(name => {
-        
-        console.log(`Hello ${name} today is ${date}`) 
-    });
+       family.forEach(person => {
+        family.forEach(member => {
 
+            if(member !== person){
+
+                console.log(`Hello ${member} my name is ${person}`)
+            }
+        })
+    });
 }
+
 
 
 
